@@ -133,7 +133,7 @@
 #     print(count)
 
 
-# 10 
+# 10
 
 # coins = 0
 # print('You have 0 coins')
@@ -143,4 +143,15 @@
 #     answer = answer.lower()
 #     coins += 1
 #     print('You have %d coins' % (coins))
+# print('Bye, sucka!')
+
+# 10 Alternate
+
+# coins = 0
+# print('You have %d coins' % (coins))
+# answer = input("Do you want another? (yes/no) ")
+# while answer == 'yes':
+#     coins += 1
+#     print('You have %d coins' % (coins))
+#     answer = input("Do you want another? (yes/no) ")
 # print('Bye, sucka!')
