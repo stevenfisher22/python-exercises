@@ -1,5 +1,3 @@
-#// 1 DRAW THESE SIMPLE SHAPES:
-
 #// 1: EQUALATERAL TRIANGLE
 
 # from turtle import *
@@ -50,18 +48,10 @@
 #         left(144)
 
 #// 7 CIRCLE
-from turtle import *
-
-def f():
-    for i in range(2):
-        width(10)
-        cirle(180)
-    mainloop()
-
-f()
-
 # from turtle import *
 
-# pencolor('orange')
-# width(10)
-# circle(180)
+# def f():
+#     for i in range(2):
+#         width(10)
+#         circle(180)
+#     mainloop()
