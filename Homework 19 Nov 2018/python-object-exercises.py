@@ -1,11 +1,11 @@
 #// 1: BASICS
 
 class Person:
-    def __init__ (self, name, email, phone, friends, greeting_count):
+    def __init__ (self, name, email, phone):
         self.name = name
         self.email = email
         self.phone = phone
-        self.friends = friends
+        self.friends = []
         self.greeting_count = 0
     def greet(self, other_person):
         print(f'Hello {other_person.name}, I am {self.name}!')
@@ -18,12 +18,13 @@ class Person:
         print(len(self.friends))
     def __str__ (self):
         return (f'Person: {self.name} {self.email} {self.phone}')
+    def list_of_friends(self): #TO GET LIST OF FRIENDS
+        for friend_object in self.friends:
+            print(friend_object.name)
 
-friendsJordan = [] #HAVE TO CREATE SEPARATE LISTS FOR EACH PERSON
-friendsSonny = []
-
-sonny = Person('Sonny', 'sonny@hotmail.com', '555-555-5555', friendsSonny, 1)
-jordan = Person('Jordan', 'jordan@aol.com', '555-555-5566', friendsJordan, 1)
+sonny = Person('Sonny', 'sonny@hotmail.com', '555-555-5555')
+jordan = Person('Jordan', 'jordan@aol.com', '555-555-5566')
+steven = Person('Steven', 'steven@gmail.com', '555-555-5577')
 
 # # GREET EACH OTHER:
 # sonny.greet(jordan)
@@ -37,9 +38,14 @@ jordan = Person('Jordan', 'jordan@aol.com', '555-555-5566', friendsJordan, 1)
 # sonny.print_contact_info()
 
 # # ADD FRIEND 1 (APPEND TO LIST):
-# jordan.friends.append(sonny)
 # sonny.friends.append(jordan)
-# print(len(jordan.friends))
+# sonny.friends.append(steven)
+
+# print(len(sonny.friends))
+# print(sonny.friends)
+# print(len(sonny.friends))
+
+# sonny.list_of_friends()
 
 # # ADD FRIEND 2 (ADD_FRIEND METHOD):
 # jordan.add_friend(sonny)
@@ -56,7 +62,6 @@ jordan = Person('Jordan', 'jordan@aol.com', '555-555-5566', friendsJordan, 1)
 
 # # __str__ METHOD
 # print(jordan)
-
 
 
 
