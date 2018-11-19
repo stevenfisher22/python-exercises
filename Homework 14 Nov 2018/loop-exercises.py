@@ -38,7 +38,7 @@
 
 
 # 6 PRINT A BOX
-# Def had to cheat with the solutions. Had no clue.
+# DEF HAD TO CHEAT USING THE SOLUTIONS. HAD NO CLUE.
 
 # width = int(input('Enter a number: '))
 # height = int(input('Enter a number: '))
