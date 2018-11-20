@@ -29,12 +29,14 @@
 
 
 # 5 POSITIVE NUMBERS
-# Found on https://www.w3resource.com/python-exercises/python-basic-exercise-114.php
-# Don't really understand it yet
 
 # numbers = [0, 1, -2, 3, 4, -5, 6, 7, 8]
-# positive_numbers = list(filter(lambda x: x >0, numbers))
-# print(positive_numbers)
+# positiveNumbers = []
+# for i in numbers:
+#     if i > 0:
+#         positiveNumbers.append(i)
+
+# print(positiveNumbers)
 
 
 # 6 POSITIVE NUMBERS II
